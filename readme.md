@@ -11,8 +11,6 @@ cat /etc/group
 
 El UID debe ser único para evitar conflictos en el sistema.
 
----
-
 ## 3. Crear el usuario
 
 ```bash
@@ -22,7 +20,6 @@ sudo adduser --uid 1036 username
 * Crea el usuario con un identificador único (UID).
 * Genera automáticamente `/home/username`.
 
----
 
 ## 4. Asignar contraseña y configurar datos
 
@@ -34,7 +31,6 @@ Durante la creación, el sistema solicitará:
 
 Estos datos son informativos y pueden dejarse en blanco.
 
----
 
 ## 5. Agregar usuario al grupo de Conda
 
@@ -44,7 +40,6 @@ sudo usermod -aG conda3 username
 
 Permite acceso a Conda instalado en `/opt/conda3`.
 
----
 
 ## 6. Verificar que se agregó al grupo
 
@@ -54,7 +49,6 @@ groups username
 
 Confirma que pertenece al grupo `conda3`.
 
----
 
 ## 7. Crear directorio de almacenamiento
 
@@ -64,7 +58,6 @@ mkdir /mnt/data-r1/EmilioBadillo
 
 Crea un espacio de trabajo para datos.
 
----
 
 ## 8. Verificar que se creó
 
@@ -74,7 +67,6 @@ ls -l /mnt/data-r1
 
 Confirma que la carpeta existe.
 
----
 
 ## 9. Asignar permisos (MUY IMPORTANTE)
 
@@ -85,7 +77,6 @@ chown emiliobadillo:emiliobadillo /mnt/data-r1/EmilioBadillo
 Otorga propiedad total de la carpeta al usuario.
 Sin esto, no podrá escribir en esa ruta.
 
----
 
 ## 10. Entrar con el usuario creado
 
@@ -95,7 +86,6 @@ su emiliobadillo
 
 Cambia a la sesión del nuevo usuario.
 
----
 
 ## 11. Inicializar Conda
 
