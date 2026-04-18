@@ -95,6 +95,33 @@ Cambia a la sesión del nuevo usuario.
 
 Configura la terminal para usar Conda.
 
+## 12. Verificar configuración
+cat ~/.bashrc
+Verifica que al final del archivo aparezca la configuración de Conda.
+
+
+Esto permite usar conda activate.
+
+
+## 13. Salir del usuario
+exit
+Regresa al usuario anterior (normalmente root o administrador).
+
+
+## 14. Configurar expiración de cuenta
+chage -E 2026-10-13 emiliobadillo
+El acceso es por 6 meses 
+Define una fecha límite para el acceso del usuario.
+Después de esa fecha, no podrá iniciar sesión.
+
+
+
+
+
+
+
+
+
 
 
 
